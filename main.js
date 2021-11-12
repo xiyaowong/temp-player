@@ -30,7 +30,7 @@ function info(msg) {
   document.getElementById('info').innerText = msg
 }
 
-const videoUrl = getQuery().url
+const videoUrl = decodeURIComponent(getQuery().url)
 
 info(videoUrl ? `当前正在播放: ${videoUrl}` : '请输入视频链接地址')
 
