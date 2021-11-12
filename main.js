@@ -31,6 +31,7 @@ function info(msg) {
 }
 
 const videoUrl = decodeURIComponent(getQuery().url)
+console.log(videoUrl)
 
 info(videoUrl ? `当前正在播放: ${videoUrl}` : '请输入视频链接地址')
 
